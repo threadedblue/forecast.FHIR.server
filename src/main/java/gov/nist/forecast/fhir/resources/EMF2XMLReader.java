@@ -10,6 +10,8 @@ import org.slf4j.LoggerFactory;
 
 import gov.nist.forecast.fhir.ForecastApplication;
 
+//This class is required to get XML serialization done the EMF way.
+//All EMF objects are EObjects.
 @Consumes(MediaType.APPLICATION_XML)
 public class EMF2XMLReader<T extends EObject> extends AbstractEMFReader<T> implements XMLReaderWriter {
 

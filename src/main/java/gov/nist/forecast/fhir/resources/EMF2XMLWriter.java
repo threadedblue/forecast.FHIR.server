@@ -7,7 +7,7 @@ import org.eclipse.emf.ecore.EObject;
 
 
 // This class is required to get XML serialization done the EMF way.
-// All EMF object are EObjects.
+// All EMF objects are EObjects.
 @Produces(MediaType.APPLICATION_XML)
 public class EMF2XMLWriter<T extends EObject> extends AbstractEMFWriter<T> implements XMLReaderWriter {
 
